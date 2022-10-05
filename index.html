@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treasure Hunt</title>
+    <link rel="stylesheet" href="./Styles/styles.css" />
+    <script src="./Scripts/index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <section id="sec1">
+        <h1 id="heading">Welcome to the Treasure Hunt </h1>
+        <h3>Select A Difficulty: <span id="selectedDifficulty"></span></h3>
+        <form>
+          <div class="radio">
+            <input
+              type="radio"
+              name="difficulty"
+              id="difficulty_1"
+              class="difficulty"
+              value="easy"
+              required="required"
+            />
+            <label for="easy">Easy</label>
+            <input
+              type="radio"
+              name="difficulty"
+              id="difficulty_2"
+              class="difficulty"
+              value="medium"
+            />
+            <label for="medium">Medium</label>
+            <input
+              type="radio"
+              name="difficulty"
+              id="difficulty_3"
+              class="difficulty"
+              value="hard"
+            />
+            <label for="hard">Hard</label>
+          </div>
+          <input type="submit" id="submit_button" />
+        </form>
+        <h3>
+          Current Player: <span id="name"></span>
+          <span id="difficulty_level"></span>
+        </h3>
+      </section>
+      <section>
+        <h1>Number of Attempts: <span id="attempts"></span></h1>
+        <div id="game_container">
+          <table id="game"></table>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

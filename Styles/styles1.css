@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap");
+
+:root {
+  --main: #f5dab8;
+  /* --pure-gold: radial-gradient(
+    ellipse farthest-corner at left top,
+    #ffffff 0%,
+    #ffffac 8%,
+    #d1b464 25%,
+    #5d4a1f 62.5%,
+    #5d4a1f 100%
+  ); */
+  --heading: rgb(153, 95, 8);
+  --offset: #402e32;
+  --yellow: linear-gradient(to right, #ffdd00, #fbb034);
+  --green: #006400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: var(--main);
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container h1 {
+  font-size: 3.5rem;
+  color: var(--heading);
+  text-align: center;
+  text-shadow: 2px 2px var(--offset);
+  margin: 1rem;
+}
+#leaderboard {
+  border: 4px solid var(--offset);
+  text-align: center;
+  width: 75%;
+  height: 80%;
+  background: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  min-width: 390px;
+}
+#leaderboard thead {
+  font-size: 2.5rem;
+  color: var(--heading);
+  text-shadow: 1px 1px black;
+}
+#leaderboard tr {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#leaderbody {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  height: 100%;
+  font-size: 1.25rem;
+  color: var(--green);
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 1px 1px white;
+}
+#leaderbody td {
+  display: grid;
+  place-items: center;
+}
+table,
+th,
+td {
+  border: 2px solid var(--offset);
+}
+td{
+    min-width: 120px;
+}
+#play{
+    width: 10%;
+    margin-top: 1rem;
+    padding: 5px;
+    background-color: var(--green);
+    border: 2px solid var(--offset);
+    color: yellow;
+    box-shadow: 2px 2px var(--offset);
+    text-align: center;
+    font-size: 1rem;
+}
+#play:hover{
+    background-color: yellow;
+    color: var(--green);
+    cursor: pointer;
+}
